@@ -1,0 +1,125 @@
+body {
+    text-align: center;
+    font-size: 260%;
+    font-family: ofont_ru_Whitehall;
+    margin: 0 auto;
+    padding: 0;
+    background: url(/img/stars.jpg) fixed;
+
+    /* display: flex; */
+    /* width: calc(250px + (1500 - 250) * ((100vw - 500px) / (1920 - 500))); */
+    /* overflow: hidden; */
+}
+
+header {
+    margin-left: 94%;
+    margin-top: 45px;
+    position: fixed;
+}
+
+a {
+    color: #ffffff;
+    padding: 0 5px;
+    text-decoration: none;
+    /* letter-spacing: -1px; */
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    /* padding: 0 0 10px; */
+}
+
+h4 {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+
+#header {
+    /* width: 360px; */
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 0;
+}
+
+#menu {
+    position: fixed;
+    top: 40px;
+    left: 360px;
+    /* font-family: helvetica, sans-serif; */
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 18px;
+    /* opacity: .75; */
+}
+
+#menu ul {
+    list-style-type: none;
+    margin-top: 30px;
+    padding: 0;
+}
+
+#menu ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #777;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+#menu ul li a:hover {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+
+#container {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    width: 6800px;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    /* Гарнитура шрифта */
+    font-family: ofont_ru_Whitehall;
+    /* Путь к файлу со шрифтом */
+    src: url("/font/ofont_ru_Whitehall.ttf") format("truetype");    
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+#container div img {
+    width: 97%;
+    margin-top: 55px;
+}
+
+.box {  
+    border: 4px solid #222222;
+    width: 390px;
+    height: 650px;
+    float: left;
+    margin: 40px;
+    padding: 5px 30px 30px 30px;
+    transform: translateX(450%);
+    margin-top: 2.5%;
+
+}
