@@ -23,9 +23,8 @@
 </head>
 
 <body>
-    <div>
-        
-    </div>
+    
+
     <!-- Курсор -->
     <div class="follow-cursor"></div> <!-- элемент, который следует за курсором -->
     <script src="/js/cursor.js"></script>
@@ -39,16 +38,12 @@
     <!-- Боковое меню -->
     <div class="side-menu">
         <div class="side-menu-buttons"> 
-
-
-            <a href="#link" class="side-menu-item">
+            <a href="#link" class="side-menu-item" id="">
                 <div class="side-menu-item-icon">
                     <img src="/img/profile.png">
                 </div>
                 <div class="side-menu-hover">Профиль</div>
             </a> 
-
-
             <a href="#link" class="side-menu-item">
                 <div class="side-menu-item-icon">
                     <img src="/img/korzina.png">
@@ -68,13 +63,31 @@
                 </div>
                 <div class="side-menu-hover">Тех поддержка</div>
             </a> 
+            <a class="side-menu-item">
+                <div class="side-menu-item-icon">
+                    <img src="/img/free-icon-search-8300918.png">
+                </div>
+                <div class="side-menu-hover">Поиск</div>
+            </a> 
         </div>
     </div>
     
     <!-- Модальные окна -->
-    <!-- <div id="menu">
-        <div class="css-modal-details">    
-            <details>
+    <!-- <div class="css-modal-details">    
+        <details>
+            <summary>Корзина</summary>
+            <input type="button">
+            <div class="cmc">
+                <div class="cmt">
+                    <p>Текст в модальном окне</p>        
+                </div>
+            </div>
+        </details>
+    </div> -->
+
+
+    <!-- 
+        <details>
                 <summary><img src="profile.png"></summary>
                 <div class="cmc">
                     <div class="cmt">
@@ -82,20 +95,7 @@
                     </div>
                 </div>
             </details>
-            <details>
-                <summary>Корзина</summary>
-                <input type="button">
-                <div class="cmc">
-                    <div class="cmt">
-                        <p>Текст в модальном окне</p>        
-                    </div>
-                </div>
-            </details>
-        </div>
-    </div> -->
-
-
-    <!-- <div class="Mainmenu">
+        <div class="Mainmenu">
         <button><img src="/img/profile.png"></button><br>
         <button><img src="/img/korzina.png"></button><br>
         <button><img src="/img/onas.png"></button><br>
@@ -136,6 +136,8 @@
             <li><a href="#box8">Океан бурь</a></li>
         </ul>
     </div> -->
+
+    
     <div id="container">
         <div id="box1" class="box">
             <img src="/img/sea of cold.png">

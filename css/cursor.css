@@ -1,6 +1,6 @@
-
   /* Начальные стили для элемента, который будет следовать за курсором, в нашем случае небольшой кружок */
   .follow-cursor {
+    z-index: 999;
     display: block;
     width: 24px;
     height: 24px;
@@ -15,6 +15,7 @@
   
   /* Активный класс для кружка при наведении на ссылку */
   .follow-cursor_active {
+    z-index: 999;
     height: 128px;
     width: 128px;
     border-width: 2px;
