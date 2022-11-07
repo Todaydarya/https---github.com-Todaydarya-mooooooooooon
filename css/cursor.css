@@ -1,11 +1,13 @@
+
   /* Начальные стили для элемента, который будет следовать за курсором, в нашем случае небольшой кружок */
   .follow-cursor {
-    z-index: 999;
+    filter: drop-shadow(0 0 20px	#FFFFFF);
     display: block;
     width: 24px;
     height: 24px;
-    border: 1px solid #0d6efd;
+    border: 1px solid #D3D3D3;
     border-radius: 50%;
+    cursor: none;
     transform: translateY(-50%) translateX(-50%); /* центрируем кружок */
     position: absolute; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
     z-index: 999; /* чтобы элемент был над остальными элементами */
@@ -15,16 +17,18 @@
   
   /* Активный класс для кружка при наведении на ссылку */
   .follow-cursor_active {
-    z-index: 999;
     height: 128px;
     width: 128px;
     border-width: 2px;
-    background: rgba(13,110,253,0.32);
+    background: rgba(	169, 169, 169,0.32);
+    filter: drop-shadow(0 0 20px	#FFFFFF);
+    cursor: none;
   }
   
   /* Скрываем декоративный элемент при ширине браузера меньше 992px */
   @media (max-width: 991.98px) {
     .follow-cursor {
       display: none;
+      cursor: none;
     }
   }
