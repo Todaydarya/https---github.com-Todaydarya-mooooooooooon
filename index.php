@@ -1,7 +1,8 @@
-
-
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
-<html lang="en" style="cursor: none;" class="disable-select ">
+<html lang="en" class="disable-select ">
 
 <head>
     <meta charset="UTF-8">
@@ -56,7 +57,7 @@
                 <div class="side-menu-item-icon">
                     <img src="/img/onas.png">
                 </div>
-                <div class="side-menu-hover">О компании</div>
+                <div class="side-menu-hover">О нас</div>
             </a> 
             <a href="#link" class="side-menu-item" data-bs-toggle="modal" data-bs-target="#tex">
                 <div class="side-menu-item-icon">
@@ -81,13 +82,20 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Профиль</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
         <div class="modal-body">
           <h2>
-
+            <?=$_SESSION['user']['email']?>
           </h2>
+          <h2>
+            <?=$_SESSION['user']['id']?>
+          </h2>
+          <h2>
+            <?=$_SESSION['user']['login']?>
+          </h2>
+          <a href="http://moon">Выход</a>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
@@ -102,11 +110,11 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
         <div class="modal-body">
-          ...
+          Пока тут пусто
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
@@ -120,13 +128,44 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+          <h5 class="modal-title" id="exampleModalLabel">О нас</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
         <div class="modal-footer">
+        <div class="onas">
+            <span class="onas1">
+                <label class="name1">
+                    Васильченко Дарья
+                </label>
+                <label class="name5">Возраст: 18</label>
+                <label class="name9">Должность: программист</label>
+            </span>
+            <span class="onas5"></span>
+            <span class="onas2">
+                <label class="name2">
+                    Сиротина Полина
+                </label>
+                <label class="name6">Возраст: ♾️</label>
+                <label class="name10">Должность: принцесса</label>
+            </span>
+            <span class="onas6"></span>
+            <span class="onas3">
+                <label class="name3">
+                    Ворона Вячеслав
+                </label>
+                <label class="name7">Возраст: 5</label>
+                <label class="name11">Должность: талисман</label>
+            </span>
+            <span class="onas7"></span>
+            <span class="onas4">
+                <label class="name4">
+                    Сангаджиева Эллина
+                </label>
+                <label class="name8">Возраст: 17</label>
+                <label class="name12">Должность: программист</label>
+            </span>
+            <span class="onas8"></span>
+        </div>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
         </div>
       </div>
@@ -138,13 +177,13 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Тех поддержка</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
         <div class="modal-footer">
+          <lable>Опишите вашу проблему</lable>
+          <input>
+          <input type="submit">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
         </div>
       </div>
@@ -156,28 +195,22 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Поиск</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
         <div class="modal-body">
             <a name="home"></a>
-
-            <div id="menu">
-                <ul>
-                    <li><a href="#home" class="a">Начало</a></li>
-                    <li><a href="#box1">Море холода</a></li>
-                    <li><a href="#box2">Море дождей</a></li>
-                    <li><a href="#box3">Море ясности</a></li>
-                    <li><a href="#box4">Море спокойствия</a></li>
-                    <li><a href="#box5">Море кризисов</a></li>
-                    <li><a href="#box6">Озеро сновидений</a></li>
-                    <li><a href="#box7">Море Змей</a></li>
-                    <li><a href="#box8">Океан бурь</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <a href="#home" class="search">Начало</a>
+            <a href="#box1" class="search">Море холода</a>
+            <a href="#box2" class="search">Море дождей</a>
+            <a href="#box3" class="search">Море ясности</a>
+            <a href="#box4" class="search">Море спокойствия</a>
+            <a href="#box5" class="search">Море кризисов</a>
+            <a href="#box6" class="search">Озеро сновидений</a>
+            <a href="#box7" class="search">Море Змей</a>
+            <a href="#box8" class="search">Океан бурь</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          </div>    
         </div>
       </div>
     </div>

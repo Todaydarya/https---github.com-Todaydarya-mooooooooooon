@@ -3,7 +3,7 @@ html{
 }
 
 body {
-    text-align: center;
+    /*text-align: center;*/
     font-size: 260%;
     font-family: ofont_ru_Whitehall;
     margin: 0 auto;
@@ -21,7 +21,7 @@ header {
     position: fixed;
 }
 
-a {
+.a {
     color: #ffffff;
     padding: 0 5px;
     text-decoration: none;
@@ -419,4 +419,22 @@ h4 {
     100% {
         background: rgba(51, 122, 183, 0.7);
     }
+}
+
+
+
+.p1{
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+}
+
+
+.search{
+    font-family: Montserrat;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 15px auto;
 }
