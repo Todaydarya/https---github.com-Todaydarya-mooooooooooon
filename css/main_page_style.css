@@ -131,33 +131,6 @@ h4 {
 
 }
 
- 
-/* Анимации */
-/* @keyframes scale {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-@keyframes move {
-    0% {
-        right: -80px;
-    }
-    100% {
-        right: 20px;
-    }
-}
-@keyframes bg {
-    0% {
-        background: rgba(51, 122, 183, 0);
-    }
-    100% {
-        background: rgba(51, 122, 183, 0.7);
-    }
-} */
-
 
 /* Боковое меню */
 .side-menu {
@@ -365,7 +338,7 @@ h4 {
     max-height: 70%;
     transition: 0.5s;
     border: 6px solid #BFE2FF;
-    border-radius: 12px;
+    border-radius: 20px;
     background: #FFF;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
     text-align: center;

@@ -76,22 +76,13 @@
   <!-- Модальное окно -->
   <!-- Профиль -->
   <div class="modal fade" id="profil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Профиль</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
         <div class="modal-body">
-          <h2>
-            <?=$_SESSION['user']['email']?>
-          </h2>
-          <h2>
-            <?=$_SESSION['user']['id']?>
-          </h2>
-          <h2>
-            <?=$_SESSION['user']['login']?>
-          </h2>
           <a href="http://moon">Выход</a>
         </div>
         <div class="modal-footer">
@@ -214,56 +205,59 @@
   </div>
     
 
+  <!--Море холода -->
+  
 
-    <!-- Элементы продаж -->
-    <div id="container">
-        <div id="box1" class="box">
-            <img src="/img/sea of cold.png">
-            <h2><a name="box1">Море холода</a></h2>
-            <h4>Стоимость:<br>65 000 ₽</h4>
-        </div>
 
-        <div id="box2" class="box">
-            <img src="/img/sea of rain.png">
-            <h2><a name="box2">Море дождей</a></h2>
-            <h4>Стоимость:<br>63 000 ₽</h4>
-        </div>
+  <!-- Элементы продаж -->
+  <div id="container">
+      <div id="box1" class="box">
+          <img src="/img/sea of cold.png">
+          <h2><a name="box1">Море холода</a></h2>
+          <h4>Стоимость:<br>65 000 ₽</h4>
+      </div>
 
-        <div id="box3" class="box">
-            <img src="/img/sea ​​of ​​clarity.png"> 
-            <h2><a name="box3">Море ясности</a></h2>
-            <h4>Стоимость:<br>70 500 ₽</h4>
-        </div>
+      <div id="box2" class="box">
+          <img src="/img/sea of rain.png">
+          <h2><a name="box2">Море дождей</a></h2>
+          <h4>Стоимость:<br>63 000 ₽</h4>
+      </div>
 
-        <div id="box4" class="box">
-            <img src="/img/sea ​​of ​​calm.png">
-            <h2><a name="box4">Море спокойствия</a></h2>
-            <h4>Стоимость:<br>79 000 ₽</h4>
-        </div>
+      <div id="box3" class="box">
+          <img src="/img/sea ​​of ​​clarity.png"> 
+          <h2><a name="box3">Море ясности</a></h2>
+          <h4>Стоимость:<br>70 500 ₽</h4>
+      </div>
 
-        <div id="box5" class="box">
-            <img src="/img/sea ​​of ​​crises.png">
-            <h2><a name="box5">Море кризисов</a></h2>
-            <h4>Стоимость:<br>57 000 ₽</h4>
-        </div>
+      <div id="box4" class="box">
+          <img src="/img/sea ​​of ​​calm.png">
+          <h2><a name="box4">Море спокойствия</a></h2>
+          <h4>Стоимость:<br>79 000 ₽</h4>
+      </div>
 
-        <div id="box6" class="box">
-            <img src="/img/lake of dreams.png">
-            <h2><a name="box6">Озеро сновидений</a></h2>
-            <h4>Стоимость:<br>90 000 ₽</h4>
-        </div>
+      <div id="box5" class="box">
+          <img src="/img/sea ​​of ​​crises.png">
+          <h2><a name="box5">Море кризисов</a></h2>
+          <h4>Стоимость:<br>57 000 ₽</h4>
+      </div>
 
-        <div id="box7" class="box">
-            <img src="/img/sea ​​of ​​snakes.png">
-            <h2><a name="box7">Море Змей</a></h2>
-            <h4>Стоимость:<br>40 000 ₽</h4>
-        </div>
+      <div id="box6" class="box">
+          <img src="/img/lake of dreams.png">
+          <h2><a name="box6">Озеро сновидений</a></h2>
+          <h4>Стоимость:<br>90 000 ₽</h4>
+      </div>
 
-        <div id="box8" class="box">
-            <img src="/img/ocean of storms.png">
-            <h2><a name="box8">Океан бурь</a></h2>
-            <h4>Стоимость:<br>200 000 ₽</h4>
-        </div>
+      <div id="box7" class="box">
+          <img src="/img/sea ​​of ​​snakes.png">
+          <h2><a name="box7">Море Змей</a></h2>
+          <h4>Стоимость:<br>40 000 ₽</h4>
+      </div>
+
+      <div id="box8" class="box">
+          <img src="/img/ocean of storms.png">
+          <h2><a name="box8">Океан бурь</a></h2>
+          <h4>Стоимость:<br>200 000 ₽</h4>
+      </div>
     <!-- <script src="/js/preloader.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
